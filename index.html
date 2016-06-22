@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/pokemon.css">
+</head>
+<body>
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Evolution</h4>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <div class="container-fluid pokedexBox">
+        <div class="row">
+            <div class="col-sm-12">
+                <header>
+                    <h1 class="text-center pokedex"><strong>Pokedex</strong></h1>
+                </header>
+            </div>
+        </div>
+    </div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">                       
+<!-- Brand and toggle get grouped for better mobile display -->     
+                    <div class="navbar-header">                               
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >          
+                            <span class="sr-only">Toggle navigation</span>        
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                                  
+                            <span class="icon-bar"></span>                 
+                        </button> 
+                        <a class="navbar-brand" href="#">Pokemon Search</a>       
+                    </div>                            
+<!-- Collect the nav links, forms, and other content for toggling -->               
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                   
+    <form class="navbar-form navbar-right" role="search">  
+        <div class="form-group">                           
+            <input id="pokemon-search-input" type="text" class="form-control personal-input" placeholder="Search pokemon..."/>                                     
+        </div>                                     
+    <button id="btn-search" type="button" class="btn btn-default">Search<img src="images/pokeball.png" class="pokeImage"></button>         
+        <div class="dropdown">
+     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   Pokemon type
+   <span class="caret"></span>
+     </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">normal</a></li>
+        <li><a href="#">fire</a></li>
+        <li><a href="#">fighting</a></li>
+        <li><a href="#">water</a></li>
+        <li><a href="#">flying</a></li>
+        <li><a href="#">grass</a></li>
+        <li><a href="#">poison</a></li>
+        <li><a href="#">electric</a></li>
+        <li><a href="#">ground</a></li>
+        <li><a href="#">psychic</a></li>
+        <li><a href="#">rock</a></li>
+        <li><a href="#">ice</a></li>
+        <li><a href="#">bug</a></li>
+        <li><a href="#">dragon</a></li>
+        <li><a href="#">ghost</a></li>
+        <li><a href="#">dark</a></li>
+        <li><a href="#">steel</a></li>
+        <li><a href="#">fairy</a></li>
+        <li><a href="#">???</a></li>
+     </ul>
+        </div>   
+    </form>                 
+    </div><!-- /.navbar-collapse -->                    
+</div><!-- /.container-fluid -->                
+            </nav>
+
+<div class="container">
+    <div class="row">
+        <div id="pokemonList"></div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="bootstrap/js/jquery-2.1.4.js"></script>    
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/pokemon.js"></script>    
+</body>
+</html>
