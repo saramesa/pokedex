@@ -33,8 +33,8 @@ function load_pokemon (response) {
 			}
 				html += '</span></span>'+ 
 				'<span>weight:<span>' + response.weight + '</span></span>' + ' ' +
-				'<span>height:<span>' + response.height + '</span></span>' + 
-				'<a id = "'+ response.id +'" href="http://pokeapi.co/api/v2/evolution-chain/' + response.id + '">Evolution</a>'+
+				'<p><span>height:<span>' + response.height + '</span></span></p>' + 
+				'<p><a id = "'+ response.id +'" href="http://pokeapi.co/api/v2/evolution-chain/' + response.id + '">Evolution</a></p>'+
 			'</div>'+ 
 			'</div>';
 	$("#pokemonList").append(html);
